@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "994213351920",
+    "firebase_url": "https://shopwire-c7133.firebaseio.com",
+    "project_id": "shopwire-c7133",
+    "storage_bucket": "shopwire-c7133.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994213351920:android:85e8e3e86574498d260d35",
+        "android_client_info": {
+          "package_name": "com.piso12.indoorex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994213351920-9cf99rdftte6m6sqh4iu619r1stmsf4f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.piso12.indoorex",
+            "certificate_hash": "d4b0bd0ea2f1ee130723f3ef93e73a04f57a376d"
+          }
+        },
+        {
+          "client_id": "994213351920-13t4370nehil8nla4oqtk9749jogv12b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVhxL7p4c7FwW-pLbA_1xn5Iwooxet8zI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994213351920-13t4370nehil8nla4oqtk9749jogv12b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

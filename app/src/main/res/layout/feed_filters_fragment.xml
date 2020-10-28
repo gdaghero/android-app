@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bs_feed_filters"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    app:behavior_hideable="true"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_top_round_dialog"
+        android:orientation="vertical">
+
+        <ImageView
+            android:background="@drawable/ic_minimize_24px"
+            android:backgroundTint="#9b9b9b"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_width="48dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_explore_24px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:text="Explorar"
+                android:textSize="@dimen/text_large3"
+                android:textStyle="bold"
+                android:textColor="@color/primaryColor"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textColor="@color/primaryLightColor"
+            android:text="Mostrar en el inicio"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center|top"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="4dp"
+                    app:cardCornerRadius="@dimen/margin_medium">
+
+                    <RelativeLayout
+                        android:id="@+id/interest_item_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_promotions"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:tint="#8F000000"
+                            android:adjustViewBounds="true" />
+
+                        <ImageView
+                            android:id="@+id/iv_promotions_check"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerInParent="true"
+                            android:tint="#FF26C78E"
+                            android:src="@drawable/ic_done_24px"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/secondaryLightColor"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/text_medium"
+                            android:layout_marginBottom="@dimen/margin_small"
+                            android:text="Promociones" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="4dp"
+                    app:cardCornerRadius="@dimen/margin_medium">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="0dp"
+                        android:background="@android:color/transparent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_events"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:tint="#8F000000"
+                            android:adjustViewBounds="true" />
+
+                        <ImageView
+                            android:id="@+id/iv_events_check"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_centerInParent="true"
+                            android:tint="#FF26C78E"
+                            android:src="@drawable/ic_done_24px"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/secondaryLightColor"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="@dimen/margin_small"
+                            android:textSize="@dimen/text_medium"
+                            android:text="Eventos" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

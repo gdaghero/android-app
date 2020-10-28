@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sign_up_interests_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/secondaryLightColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_interests_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_large3"
+                android:textStyle="bold"
+                android:textColor="@color/primaryColor"
+                android:text="Hola "/>
+
+            <TextView
+                android:id="@+id/txt_sign_up_interests_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_large3"
+                android:textStyle="bold"
+                android:textColor="@color/primaryColor" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_interests_1"
+            android:layout_below="@+id/ll_interests_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:textSize="@dimen/text_medium"
+            android:text="Personalizá tu experiencia seleccionando tus intereses" />
+
+        <LinearLayout
+            android:id="@+id/sign_up_interests_grid_container"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/txt_interests_1"
+            android:orientation="vertical" />
+
+        <ImageButton
+            android:id="@+id/btn_sign_up_done"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@id/btn_boundaries"
+            android:layout_toLeftOf="@id/btn_boundaries"
+            android:background="@drawable/selector_back_image_button"
+            android:src="@drawable/ic_done_all_24px"
+            android:tint="@color/secondaryLightColor" />
+
+        <Space
+            android:id="@+id/btn_boundaries"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/margin_medium"
+            android:layout_height="@dimen/margin_medium" />
+    </RelativeLayout>
+</LinearLayout>

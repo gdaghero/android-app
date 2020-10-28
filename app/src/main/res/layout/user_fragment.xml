@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/user_detail" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/user_detail_interests" />
+
+                <Button
+                    android:id="@+id/profile_log_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/shape_round_button_bg"
+                    android:textColor="@color/secondaryLightColor"
+                    android:layout_margin="@dimen/margin_medium"
+                    android:drawableRight="@drawable/ic_exit_to_app_24px"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="@dimen/margin_medium"
+                    android:drawableTint="@color/secondaryLightColor"
+                    android:text="Salir"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_categories"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_medium"
+    android:layout_marginLeft="@dimen/margin_medium"
+    android:layout_marginRight="@dimen/margin_medium"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtv_search_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryColor"
+        android:textStyle="bold"
+        android:text="@string/search_title_categories"
+        android:textSize="@dimen/text_medium"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/category_pager"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"/>
+
+    <LinearLayout
+        android:id="@+id/category_pager_dots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center"
+        android:orientation="horizontal"/>
+
+</LinearLayout>
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_event_24px"/>
+
+            <TextView
+                android:id="@+id/tv_discount_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/primaryColor"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/iv_campaign_detail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_access_time_24px"/>
+
+            <TextView
+                android:id="@+id/tv_campaign_detail_time_remaining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_medium"
+                android:textColor="@color/primaryColor"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_detail_campaign_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:textColor="@color/primaryLightColor"
+        android:textSize="@dimen/text_medium"
+        android:maxLines="4"/>
+
+    <Button
+        android:id="@+id/btn_show_qr"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Obtener QR"
+        android:layout_margin="@dimen/margin_medium"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="40dp"
+        android:drawableLeft="@drawable/ic_qr_24px"
+        android:drawableTint="@color/secondaryLightColor"
+        android:textColor="@color/secondaryLightColor"
+        android:background="@drawable/shape_round_button_bg"/>
+</LinearLayout>

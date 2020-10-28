@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/store_detail_coordinator"
+    android:clickable="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:id="@+id/store_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/secondaryLightColor"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/iv_store_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_margin="@dimen/margin_medium"
+            android:tint="@drawable/selector_image_button_black"
+            android:src="@drawable/ic_keyboard_arrow_left_24px" />
+
+        <include layout="@layout/search_store_detail_header"/>
+
+        <include layout="@layout/search_store_detail_body"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

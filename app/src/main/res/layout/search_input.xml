@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_small"
+    android:layout_marginLeft="@dimen/margin_medium"
+    android:layout_marginRight="@dimen/margin_medium"
+    android:orientation="vertical">
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/txt_search_input"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/shape_round_input"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        android:textSize="@dimen/text_medium"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/margin_medium"
+        android:drawableLeft="@drawable/ic_search_24px"
+        android:drawableTint="#bdbdbd"
+        android:drawablePadding="@dimen/margin_small"
+        android:hint="@string/search_suggestion"/>
+
+    <ImageButton
+        android:id="@+id/ib_search_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shape_search_close_icon"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:tint="#bdbdbd"
+        android:background="@null"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/search_progress"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:indeterminate="true"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:indeterminateTint="#1D976C"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_medium">
+
+        <ImageButton
+            android:id="@+id/ib_campaign_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:background="@null"
+            android:tint="@drawable/selector_image_button_black"
+            android:src="@drawable/ic_favorite_border_24px"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/iv_bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_small"
+                android:src="@drawable/ic_bookmark_border_24px"/>
+
+            <ImageView
+                android:id="@+id/iv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_access_time_24px"/>
+
+            <TextView
+                android:id="@+id/tv_feed_campaign_time_remaining"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text=""
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:textSize="@dimen/text_small2"
+                android:textColor="@color/primaryColor"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+

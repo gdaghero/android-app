@@ -1,0 +1,72 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_step_1"
+        android:textSize="@dimen/text_large2"
+        android:textColor="@color/secondaryTextColor"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etxt_sign_up_email"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@drawable/shape_round_input"
+        android:enabled="false"
+        android:hint="@string/hint_login_email"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        android:textColor="@color/primaryColor"
+        android:textSize="@dimen/text_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp_sign_up_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:background="@drawable/shape_round_input"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_small"
+            app:ccp_padding="@dimen/margin_small"
+            app:ccp_showNameCode="false"
+            app:ccp_defaultLanguage="SPANISH"
+            app:ccp_defaultNameCode="UY"
+            app:ccp_textSize="@dimen/text_medium"
+            app:ccp_showArrow="false"
+            app:ccpDialog_showFastScroller="false"
+            app:ccpDialog_background="@drawable/shape_top_round_dialog"
+            app:ccpDialog_allowSearch="false"
+            app:ccpDialog_textColor="@color/primaryColor"
+            app:ccp_arrowColor="@color/primaryColor"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/etxt_sign_up_phone"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/margin_medium"
+            android:inputType="number"
+            android:maxLength="15"
+            android:textSize="@dimen/text_medium"
+            android:hint="@string/hint_sign_up_phone"
+            android:background="@drawable/shape_round_input"
+            android:textColor="@color/primaryColor"/>
+    </LinearLayout>
+</LinearLayout>

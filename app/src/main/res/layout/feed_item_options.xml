@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bs_feed_item_options"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    app:behavior_hideable="true"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_round_dialog"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="24dp"
+            android:text="Compartir..."
+            android:textAllCaps="false"
+            android:textColor="@color/primaryLightColor"
+            android:background="@null"
+            android:textSize="@dimen/text_medium"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="24dp"
+            android:text="Ir a la campaña"
+            android:textAllCaps="false"
+            android:textColor="@color/primaryLightColor"
+            android:background="@null"
+            android:textSize="@dimen/text_medium"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium" />
+
+        <Button
+            android:id="@+id/btn_dislike_campaign"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="24dp"
+            android:text="No me interesa"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_red_light"
+            android:background="@null"
+            android:textSize="@dimen/text_medium"
+            android:layout_marginBottom="@dimen/margin_medium"/>
+    </LinearLayout>
+</RelativeLayout>

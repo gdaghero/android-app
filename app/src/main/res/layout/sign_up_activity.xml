@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sign_up_container"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/secondaryLightColor"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/sign_up_progress_bar"/>
+
+    <include layout="@layout/util_progress_bar"/>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_large"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_sign_up_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:src="@drawable/ic_shopwire" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/steps_pager"
+            android:layout_below="@id/iv_sign_up_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/btn_sign_up_go_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back_24px"
+            android:tint="@color/secondaryLightColor"
+            android:background="@drawable/selector_back_image_button"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageButton
+            android:id="@+id/btn_sign_up_continue"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_forward_24px"
+            android:tint="@color/secondaryLightColor"
+            android:background="@drawable/selector_back_image_button"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+        <ImageButton
+            android:id="@+id/btn_sign_up_done"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_done_24px"
+            android:tint="@color/secondaryLightColor"
+            android:background="@drawable/selector_back_image_button"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

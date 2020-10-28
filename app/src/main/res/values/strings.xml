@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">IndoorEx</string>
+    <string name="title_activity_main">IndoorEx</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="msg_permissions_needed">Para poder utilizar la app tenés que permitirnos acceder
+        a tu ubicación</string>
+    <string name="title_search">Buscar</string>
+    <string name="title_explore">Explorar</string>
+    <string name="title_promotions">Mis promos</string>
+    <string name="title_profile">Perfil</string>
+    <string name="title_favorites">Mis favoritos</string>
+    <string name="search_suggestion">Tiendas, promociones o eventos</string>
+    <string name="search_title_categories">Categorías</string>
+    <string name="search_categories_item_all">Todas las\ncategorías</string>
+    <string name="search_stores_title">Tiendas</string>
+
+    <!-- Exceptions  -->
+    <string name="unexpected_error">Error inesperado :|</string>
+    <string name="network_error">Error de conectividad,
+        asegurate de estar conectado a internet</string>
+    <string name="fetch_error">Error interno :|</string>
+    <string name="hint_login_email">Email</string>
+    <string name="hint_login_password">Contraseña</string>
+
+    <!-- Facebook Login -->
+    <string name="facebook_app_id">254597722203157</string>
+    <string name="fb_login_protocol_scheme">fb254597722203157</string>
+    <string name="auth_token_file_key">AUTH_TOKEN</string>
+
+    <!-- Login -->
+    <string name="btn_login_title">Ingresar</string>
+    <string name="login_label_login_now">Ya tenés cuenta? <u><b>Ingresá acá</b></u></string>
+    <string name="login_label_register_now">No tenés cuenta? <u><b>Registrate acá</b></u></string>
+    <string name="login_label_welcome">Bienvenido a IndoorEx</string>
+    <string name="login_label">Ingresá a IndoorEx</string>
+    <string name="login_label_register_social">Registrate con tus redes sociales</string>
+    <string name="login_label_login_social">Con tus redes sociales</string>
+    <string name="login_label_login_or_register_email">O con tu cuenta de correo</string>
+    <string name="login_error_firebase_auth">Error de autenticación, verificar email
+        o contraseña</string>
+    <string name="login_empty_email_or_password_error">Tenés que ingresar email
+        y contraseña</string>
+
+    <!-- Sign Up -->
+    <string name="sign_up_join_indoorex">Uníte a la comunidad</string>
+    <string name="hint_sign_up_last_name">Apellido</string>
+    <string name="hint_sign_up_name">Nombre</string>
+    <string name="hint_sign_up_phone">Teléfono</string>
+    <string name="hint_sign_up_birth_date">Fecha de nacimiento</string>
+    <string name="btn_sign_up_title">Registrarme</string>
+    <string name="hint_sign_up_password">Contraseña</string>
+    <string name="hint_sign_up_password_confirmation">Confirmar contraseña</string>
+    <string name="sign_up_user_already_exists_error">Ya existe un usuario registrado con el
+        email/teléfono ingresado </string>
+    <string name="sign_up_firebase_error">Ocurrió un error al registrar el usuario</string>
+    <string name="sign_up_empty_email_error">Tenés que ingresar un email válido</string>
+    <string name="hint_sign_up_gender_male">Soy hombre</string>
+    <string name="hint_sign_up_gender_female">Soy mujer</string>
+    <string name="google_secret_key">lxlmaJGinjbHwfn88f_-1nQb</string>
+    <string name="sign_up_step_1">Ingresá tu número de télefono</string>
+    <string name="sign_up_step_2">Uníte a la comunidad</string>
+    <string name="sign_up_birth_date_title">Decínos cuándo naciste</string>
+
+    <!-- Firebase Remote Config -->
+    <string name="firebase_auth_token_key">FIREBASE_TOKEN</string>
+    <string name="firebase_auth_jwt_token_key">FIREBASE_JWT_TOKEN</string>
+    <string name="backoffice_api_url_key">BACKOFFICE_API</string>
+    <string name="locations_api_url_key">LOCATIONS_API</string>
+    <string name="location_post_interval_key">APP_USER_LOCATION_POST_INTERVAL</string>
+
+    <!-- QR Code -->
+
+    <string name="campaign_qr_code_message">Mostrá este <b>código qr</b> en el mostrador del local
+        adherido para acceder a la promo</string>
+
+    <!-- Notifications Shared prefs -->
+    <string name="qr_code_generation_error">Ocurrió un error al generar el código qr</string>
+    <string name="sign_up_backoffice_error">Ocurrió un error al registrar el usuario</string>
+    <string name="login_error_weak_password">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="sign_up_firebase_auth_error">El email ingresado no es válido</string>
+</resources>
